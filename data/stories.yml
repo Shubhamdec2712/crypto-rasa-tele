@@ -1,0 +1,287 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: start
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: Path 1
+  steps:
+  - intent: ask_cryptocurrency
+  - action: utter_ask_cryptocurrency
+
+- story: Path 2
+  steps:
+  - intent: first_cryptocurrency
+  - action: utter_first_cryptocurrency
+
+- story: Path 3
+  steps:
+  - intent: popular_cryptocurrencies
+  - action: utter_popular_cryptocurrencies
+
+- story: Path 4
+  steps:
+  - intent: difference_from_traditional_money
+  - action: utter_difference_from_traditional_money
+
+- story: Path 5
+  steps:
+  - intent: ensure_security
+  - action: utter_ensure_security
+
+- story: Path 6
+  steps:
+  - intent: advantages_of_cryptocurrency
+  - action: utter_advantages_of_cryptocurrency
+
+- story: Path 7
+  steps:
+  - intent: future_of_finance
+  - action: utter_future_of_finance
+
+- story: Path 8
+  steps:
+  - intent: mining_process
+  - action: utter_mining_process
+
+- story: Path 9
+  steps:
+  - intent: value_derivation
+  - action: utter_value_derivation
+
+- story: Path 10
+  steps:
+  - intent: acquire_cryptocurrency
+  - action: utter_acquire_cryptocurrency
+
+- story: Path 11
+  steps:
+  - intent: stablecoins_work
+  - action: utter_stablecoins_work
+
+- story: Path 12
+  steps:
+  - intent: cryptocurrency_use_cases
+  - action: utter_cryptocurrency_use_cases
+
+- story: Path 13
+  steps:
+  - intent: store_cryptocurrency
+  - action: utter_store_cryptocurrency
+
+- story: Path 14
+  steps:
+  - intent: everyday_use
+  - action: utter_everyday_use
+
+- story: Path 15
+  steps:
+  - intent: key_concepts
+  - action: utter_key_concepts
+
+- story: Significance of encryption
+  steps:
+  - intent: significance_of_encryption
+  - action: utter_significance_of_encryption
+
+- story: First cryptocurrency and founder
+  steps:
+  - intent: first_cryptocurrency_and_founder
+  - action: utter_first_cryptocurrency_and_founder
+
+- story: Cryptocurrency creation process
+  steps:
+  - intent: cryptocurrency_creation_process
+  - action: utter_cryptocurrency_creation_process
+
+- story: Well-known cryptocurrencies
+  steps:
+  - intent: well_known_cryptocurrencies
+  - action: utter_well_known_cryptocurrencies
+
+- story: Buying cryptocurrency steps
+  steps:
+  - intent: buying_cryptocurrency_steps
+  - action: utter_buying_cryptocurrency_steps
+
+- story: Secure cryptocurrency storage
+  steps:
+  - intent: secure_cryptocurrency_storage
+  - action: utter_secure_cryptocurrency_storage
+
+- story: Cryptocurrency purchase examples
+  steps:
+  - intent: cryptocurrency_purchase_examples
+  - action: utter_cryptocurrency_purchase_examples
+
+- story: Risks of investing in cryptocurrency
+  steps:
+  - intent: risks_of_investing_in_cryptocurrency
+  - action: utter_risks_of_investing_in_cryptocurrency
+
+- story: Bitcoin legal status
+  steps:
+  - intent: bitcoin_legal_status
+  - action: utter_bitcoin_legal_status
+
+- story: Countries where Bitcoin is legal
+  steps:
+  - intent: countries_where_bitcoin_legal
+  - action: utter_countries_where_bitcoin_legal
+
+- story: US Bitcoin regulation
+  steps:
+  - intent: us_bitcoin_regulation
+  - action: utter_us_bitcoin_regulation
+
+- story: EU Bitcoin stance
+  steps:
+  - intent: eu_bitcoin_stance
+  - action: utter_eu_bitcoin_stance
+
+- story: Canada Bitcoin regulation
+  steps:
+  - intent: canada_bitcoin_regulation
+  - action: utter_canada_bitcoin_regulation
+
+- story: Australia Bitcoin approach
+  steps:
+  - intent: australia_bitcoin_approach
+  - action: utter_australia_bitcoin_approach
+
+- story: France Bitcoin regulation
+  steps:
+  - intent: france_bitcoin_regulation
+  - action: utter_france_bitcoin_regulation
+
+- story: Banned countries
+  steps:
+  - intent: banned_countries
+  - action: utter_banned_countries
+
+- story: Reasons for banning Bitcoin
+  steps:
+  - intent: reasons_for_banning_bitcoin
+  - action: utter_reasons_for_banning_bitcoin
+
+- story: US potential Bitcoin illegalization
+  steps:
+  - intent: us_potential_bitcoin_illegalization
+  - action: utter_us_potential_bitcoin_illegalization
+
+- story: Legal consequences of illegal cryptocurrency use
+  steps:
+  - intent: legal_consequences_of_illegal_cryptocurrency_use
+  - action: utter_legal_consequences_of_illegal_cryptocurrency_use
+
+- story: spread of technologies
+  steps:
+  - intent: spread_of_technologies
+  - action: utter_spread_of_technologies
+
+- story: cryptocurrency adoption
+  steps:
+  - intent: cryptocurrency_adoption
+  - action: utter_cryptocurrency_adoption
+
+- story: metrics of crypto adoption
+  steps:
+  - intent: metrics_of_crypto_adoption
+  - action: utter_metrics_of_crypto_adoption
+
+- story: weigh findings with PPP
+  steps:
+  - intent: weigh_findings_with_PPP
+  - action: utter_weigh_findings_with_PPP
+
+- story: crypto interest in Vietnam
+  steps:
+  - intent: crypto_interest_in_Vietnam
+  - action: utter_crypto_interest_in_Vietnam
+
+- story: surge in demand in Philippines
+  steps:
+  - intent: surge_in_demand_Philippines
+  - action: utter_surge_in_demand_Philippines
+
+
+- story: Bitcoin Mining Energy Consumption
+  steps:
+    - intent: bitcoin_mining_energy_consumption
+    - action: utter_bitcoin_mining_energy_consumption
+
+- story: Ledger Journal Establishment
+  steps:
+    - intent: ledger_journal_establishment
+    - action: utter_ledger_journal_establishment
+
+- story: Concerns About Cryptocurrencies
+  steps:
+    - intent: cryptocurrency_concerns
+    - action: utter_cryptocurrency_concerns
+
+- story: Cryptocurrency Regulation in Brazil
+  steps:
+    - intent: cryptocurrency_regulation_brazil
+    - action: utter_cryptocurrency_regulation_brazil
+
+- story: Brazilian Tax Law on Cryptocurrencies
+  steps:
+    - intent: brazil_tax_law_crypto
+    - action: utter_brazil_tax_law_crypto
+
+- story: Regulation of Blockchain in China
+  steps:
+    - intent: china_blockchain_regulation
+    - action: utter_china_blockchain_regulation
+
+- story: Canadian Regulation on Cryptocurrencies
+  steps:
+    - intent: canadian_crypto_regulation
+    - action: utter_canadian_crypto_regulation
+
+- story: Regulation of Cryptocurrencies in the EU
+  steps:
+    - intent: eu_regulation_crypto
+    - action: utter_eu_regulation_crypto
+
+- story: Cryptocurrency Regulation in India
+  steps:
+    - intent: india_crypto_regulation
+    - action: utter_india_crypto_regulation
+
+- story: Cryptocurrency Regulation in Nigeria
+  steps:
+    - intent: nigeria_crypto_regulation
+    - action: utter_nigeria_crypto_regulation
+
+- story: Cryptocurrency Regulation in the US
+  steps:
+    - intent: us_crypto_regulation
+    - action: utter_us_crypto_regulation
+

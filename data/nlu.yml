@@ -1,0 +1,677 @@
+version: "3.1"
+
+nlu:
+- intent: start
+  examples: |
+    - /start
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: ask_cryptocurrency
+  examples: |
+    - What is cryptocurrency?
+    - Explain cryptocurrency to me
+    - Can you tell me about cryptocurrency?
+    - What do you mean by cryptocurrency?
+    - I'm curious about cryptocurrency
+    - Tell me the basics of cryptocurrency
+    - Teach me about cryptocurrency
+    - Define cryptocurrency
+    - What's the definition of cryptocurrency?
+    - How would you describe cryptocurrency?
+
+- intent: first_cryptocurrency
+  examples: |
+    - What was the first cryptocurrency?
+    - Tell me about the first cryptocurrency
+    - Which was the original cryptocurrency?
+    - I want to learn about the inception of cryptocurrency
+    - Explain the history of cryptocurrency
+    - Who invented the first cryptocurrency?
+    - Give me details about the beginning of cryptocurrency
+    - When was the concept of cryptocurrency introduced?
+    - I'm interested in the genesis of cryptocurrency
+    - What initiated the cryptocurrency revolution?
+
+- intent: popular_cryptocurrencies
+  examples: |
+    - Which cryptocurrencies are popular by market capitalization?
+    - List some popular cryptocurrencies
+    - What are the most well-known cryptocurrencies?
+    - Tell me about the top cryptocurrencies
+    - I want to know the widely recognized cryptocurrencies
+    - Which digital currencies have the highest market value?
+    - Can you provide information about the most traded cryptocurrencies?
+    - Give me details about the trending cryptocurrencies
+    - What are the dominant cryptocurrencies in the market?
+    - I'm interested in learning about the leading cryptocurrencies
+
+- intent: difference_from_traditional_money
+  examples: |
+    - How are cryptocurrencies different from traditional money?
+    - Explain the difference between cryptocurrency and traditional money
+    - What sets cryptocurrency apart from traditional currency?
+    - In what ways do cryptocurrencies diverge from conventional currency?
+    - Compare and contrast cryptocurrency with fiat currency
+    - Highlight the distinctions between cryptocurrency and traditional money
+    - What are the unique features of cryptocurrency compared to regular currency?
+    - I'd like to understand the disparities between cryptocurrency and traditional money
+    - Discuss the fundamental differences between cryptocurrency and conventional currency
+    - Elaborate on how cryptocurrency differs from fiat currency
+
+- intent: ensure_security
+  examples: |
+    - How do cryptocurrencies ensure security?
+    - What measures are taken to secure cryptocurrencies?
+    - Explain the security aspect of cryptocurrencies
+    - What safeguards are implemented to protect cryptocurrencies?
+    - Discuss the security mechanisms of cryptocurrencies
+    - How are vulnerabilities addressed in cryptocurrency systems?
+    - Describe the security protocols used in cryptocurrency networks
+    - Explain how cryptocurrency platforms maintain security
+    - Can you elaborate on the security practices of cryptocurrencies?
+    - What steps are taken to ensure the safety of cryptocurrency transactions?
+
+- intent: advantages_of_cryptocurrency
+  examples: |
+    - What are some advantages of using cryptocurrency?
+    - Why should I use cryptocurrency?
+    - Tell me the benefits of cryptocurrency
+    - What are the pros of using cryptocurrency?
+    - Enlighten me on the advantages of cryptocurrency
+    - Convince me why I should adopt cryptocurrency
+    - What are the positive aspects of cryptocurrency usage?
+    - List the advantages associated with cryptocurrency transactions
+    - How does cryptocurrency offer an edge over traditional payment methods?
+    - What benefits does cryptocurrency provide over conventional currencies?
+
+- intent: future_of_finance
+  examples: |
+    - Why is cryptocurrency considered the future of finance?
+    - What makes cryptocurrency the future of finance?
+    - Explain the role of cryptocurrency in the future of finance
+    - How will cryptocurrency shape the future of financial systems?
+    - Discuss the potential of cryptocurrency as a financial game-changer
+    - Why do experts believe in the future prominence of cryptocurrency?
+    - Provide insights into the transformative impact of cryptocurrency on finance
+    - What developments indicate the growing significance of cryptocurrency in finance?
+    - What trends suggest that cryptocurrency will dominate the future financial landscape?
+    - Can you elaborate on the vision of cryptocurrency as the future of finance?
+
+- intent: mining_process
+  examples: |
+    - How does cryptocurrency mining work?
+    - Explain cryptocurrency mining
+    - What is involved in cryptocurrency mining?
+    - Provide an overview of cryptocurrency mining
+    - Describe the process of mining cryptocurrency
+    - How do miners generate new coins in cryptocurrency systems?
+    - Discuss the mechanics of cryptocurrency mining
+    - Explain the concept of mining in cryptocurrency networks
+    - Can you detail the steps of cryptocurrency mining?
+    - What role do miners play in the cryptocurrency ecosystem?
+
+- intent: value_derivation
+  examples: |
+    - Where does cryptocurrency derive its value from?
+    - What factors determine the value of cryptocurrency?
+    - Explain the valuation of cryptocurrency
+    - How is the value of cryptocurrency determined?
+    - What influences the price of cryptocurrency?
+    - Discuss the elements contributing to cryptocurrency valuation
+    - Can you shed light on the factors impacting cryptocurrency value?
+    - Describe the mechanisms underlying cryptocurrency pricing
+    - What drives the value fluctuations of cryptocurrency?
+    - How do market dynamics affect the value of cryptocurrency?
+
+- intent: acquire_cryptocurrency
+  examples: |
+    - How can someone acquire cryptocurrency?
+    - What are the ways to get cryptocurrency?
+    - Tell me about acquiring cryptocurrency
+    - How do I purchase cryptocurrency?
+    - Explain the process of obtaining cryptocurrency
+    - Where can I buy cryptocurrency?
+    - What platforms facilitate the acquisition of cryptocurrency?
+    - Can you guide me on acquiring my first cryptocurrency?
+    - What are the steps to acquiring digital currency?
+    - How can I invest in cryptocurrency?
+
+- intent: stablecoins_work
+  examples: |
+    - What are stablecoins, and how do they work?
+    - Explain the functionality of stablecoins
+    - How are stablecoins different from other cryptocurrencies?
+    - Provide insights into stablecoin operation
+    - What purpose do stablecoins serve, and how are they maintained?
+    - Discuss the stability mechanisms of stablecoins
+    - Can you detail the design principles of stablecoins?
+    - What distinguishes stablecoins from volatile cryptocurrencies?
+    - How do stablecoins maintain a fixed value?
+    - What role do stablecoins play in the cryptocurrency ecosystem?
+
+- intent: cryptocurrency_use_cases
+  examples: |
+    - What are some use cases for cryptocurrency?
+    - How can cryptocurrency be used in real life?
+    - Tell me about the applications of cryptocurrency
+    - Provide examples of cryptocurrency utility
+    - Discuss practical scenarios for cryptocurrency usage
+    - How do people utilize cryptocurrency in various domains?
+    - Can you illustrate the diverse applications of cryptocurrency?
+    - What are the real-world applications of cryptocurrency?
+    - How is cryptocurrency integrated into everyday activities?
+    - What are the emerging use cases for cryptocurrency?
+
+- intent: store_cryptocurrency
+  examples: |
+    - How can someone store cryptocurrency securely?
+    - What are the secure storage options for cryptocurrency?
+    - Explain cryptocurrency storage methods
+    - How do I safeguard my cryptocurrency holdings?
+    - Discuss strategies for secure cryptocurrency storage
+    - Where should I store my digital assets securely?
+    - Can you recommend reliable cryptocurrency storage solutions?
+    - What are the best practices for storing cryptocurrency?
+    - How can I protect my cryptocurrency from theft?
+    - What security measures should I implement for cryptocurrency storage?
+
+- intent: everyday_use
+  examples: |
+    - What are some ways to use cryptocurrency in everyday life?
+    - How can cryptocurrency be used for daily transactions?
+    - Tell me about everyday use of cryptocurrency
+    - Provide examples of cryptocurrency usage in daily life
+    - How do people integrate cryptocurrency into their routines?
+    - Can you suggest practical applications of cryptocurrency?
+    - What are the common instances of cryptocurrency usage?
+    - How is cryptocurrency utilized in day-to-day transactions?
+    - What are the typical scenarios for employing cryptocurrency?
+    - How can I incorporate cryptocurrency into my daily activities?
+
+- intent: key_concepts
+  examples: |
+    - What are some key concepts related to cryptocurrency?
+    - Explain the fundamental concepts of cryptocurrency
+    - Tell me about important cryptocurrency concepts
+    - Discuss the foundational principles of cryptocurrency
+    - Can you clarify essential concepts in cryptocurrency?
+    - What are the fundamental ideas underlying cryptocurrency?
+    - Explain the core principles and features of cryptocurrency
+    - Elaborate on the key concepts essential for understanding cryptocurrency
+    - What terminology should I be familiar with in cryptocurrency?
+    - Provide an overview of the key concepts in cryptocurrency
+
+
+- intent: significance_of_encryption
+  examples: |
+    - What is the significance of encryption in cryptocurrency?
+    - How does encryption contribute to cryptocurrency security?
+    - Explain the role of encryption in cryptocurrency
+    - Why is encryption important in cryptocurrency transactions?
+    - Can you elaborate on the importance of encryption in cryptocurrency?
+    - Discuss the significance of encryption for securing cryptocurrency transactions
+    - What role does encryption play in ensuring cryptocurrency security?
+    - How does encryption safeguard cryptocurrency transactions?
+    - Explain how encryption protects cryptocurrency data and transactions
+    - Why is encryption considered essential for cryptocurrency?
+
+- intent: first_cryptocurrency_and_founder
+  examples: |
+    - What was the first cryptocurrency, and who founded it?
+    - Who created the first cryptocurrency, and what was it?
+    - Tell me about the founder of the first cryptocurrency
+    - Explain the origins of the first cryptocurrency and its creator
+    - Who is credited with creating the initial cryptocurrency, and when?
+    - Provide details about the founder of the first cryptocurrency
+    - What is the name of the person or group behind the first cryptocurrency?
+    - Can you give me information about the first cryptocurrency's founder?
+    - Discuss the individual or team responsible for the creation of the first cryptocurrency
+    - Who is Satoshi Nakamoto, and what role did they play in the first cryptocurrency?
+
+- intent: cryptocurrency_creation_process
+  examples: |
+    - How are cryptocurrencies created?
+    - Explain the process of creating cryptocurrencies
+    - What is involved in the creation of cryptocurrencies?
+    - Can you describe how cryptocurrencies come into existence?
+    - Discuss the mechanism behind the creation of cryptocurrencies
+    - How do new cryptocurrencies get generated?
+    - Explain the concept of cryptocurrency mining and its role in creation
+    - What are the methods for generating new cryptocurrencies?
+    - Describe the process of minting or issuing cryptocurrencies
+    - How does cryptocurrency issuance occur, and who controls it?
+
+- intent: well_known_cryptocurrencies
+  examples: |
+    - What are some well-known cryptocurrencies besides Bitcoin?
+    - List some popular cryptocurrencies other than Bitcoin
+    - Can you name a few widely recognized cryptocurrencies apart from Bitcoin?
+    - Tell me about other famous digital currencies aside from Bitcoin
+    - Provide examples of notable cryptocurrencies in addition to Bitcoin
+    - Mention some commonly traded cryptocurrencies besides Bitcoin
+    - Which cryptocurrencies have gained prominence alongside Bitcoin?
+    - What are the alternatives to Bitcoin in the cryptocurrency market?
+    - Give me some examples of top cryptocurrencies apart from Bitcoin
+    - Discuss other major cryptocurrencies besides Bitcoin
+
+- intent: buying_cryptocurrency_steps
+  examples: |
+    - What are the steps involved in buying cryptocurrency?
+    - How do I purchase cryptocurrency? Can you guide me through the process?
+    - Explain the procedure for buying cryptocurrency
+    - Can you outline the steps to acquire cryptocurrency from an exchange?
+    - Tell me how to buy cryptocurrency using fiat currency
+    - What is the process of purchasing cryptocurrency from a broker or exchange?
+    - Discuss the steps required to invest in cryptocurrency
+    - How can I buy digital currency? What are the necessary steps?
+    - Provide a step-by-step guide on purchasing cryptocurrency
+    - I'm new to cryptocurrency. Can you walk me through the steps to buy it?
+
+- intent: secure_cryptocurrency_storage
+  examples: |
+    - How can someone store cryptocurrency securely?
+    - What are the best practices for securing cryptocurrency storage?
+    - Explain how to safely store cryptocurrency
+    - Can you provide tips for securely storing cryptocurrency assets?
+    - Discuss the methods for ensuring the security of cryptocurrency holdings
+    - How do I protect my cryptocurrency from theft or loss?
+    - Tell me about secure storage options for cryptocurrency
+    - What measures should I take to safeguard my digital assets?
+    - Provide guidance on maintaining the security of cryptocurrency wallets
+    - How can I prevent unauthorized access to my cryptocurrency funds?
+
+- intent: cryptocurrency_purchase_examples
+  examples: |
+    - What are some examples of purchases that can be made using cryptocurrency?
+    - Can you give me examples of things I can buy with cryptocurrency?
+    - Tell me about real-world purchases I can make using cryptocurrency
+    - Provide instances of goods or services that can be bought with cryptocurrency
+    - Give me some examples of retailers accepting cryptocurrency payments
+    - Discuss the types of products or services I can purchase with cryptocurrency
+    - How is cryptocurrency being used for transactions in different industries?
+    - What are the practical uses of cryptocurrency for making purchases?
+    - Share some case studies or examples of cryptocurrency transactions
+    - How widespread is the acceptance of cryptocurrency as a payment method?
+
+- intent: risks_of_investing_in_cryptocurrency
+  examples: |
+    - What are some risks associated with investing in cryptocurrency?
+    - Can you explain the potential drawbacks of investing in cryptocurrency?
+    - Discuss the risks and challenges of putting money into cryptocurrency
+    - Tell me about the downsides of cryptocurrency investment
+    - What should I be aware of before investing in cryptocurrency?
+    - Explain the possible pitfalls of entering the cryptocurrency market
+    - How risky is investing in cryptocurrency compared to other assets?
+    - Provide an overview of the risks involved in cryptocurrency trading
+    - What factors contribute to the volatility and uncertainty of cryptocurrency investments?
+    - How can I mitigate the risks associated with cryptocurrency investing?
+
+- intent: bitcoin_legal_status
+  examples: |
+    - What is the legal status of Bitcoin in different countries?
+    - Can you tell me if Bitcoin is legal or illegal in various countries?
+    - Explain how Bitcoin is regulated around the world
+    - What are the laws governing the use of Bitcoin in different jurisdictions?
+    - Tell me about the legality of Bitcoin in various nations
+    - Provide an overview of Bitcoin's legal status globally
+    - How do different countries treat Bitcoin from a legal standpoint?
+    - Are there any restrictions or regulations on Bitcoin in specific countries?
+    - What is the government's stance on Bitcoin in different parts of the world?
+    - Discuss the legal framework surrounding Bitcoin in different geographical regions?
+
+- intent: countries_where_bitcoin_legal
+  examples: |
+    - What are some countries where Bitcoin is legal, and how do they regulate it?
+    - Can you list the nations that have legalized Bitcoin, along with their regulations?
+    - Tell me about countries where Bitcoin is accepted and the rules governing it
+    - Explain the regulatory environment for Bitcoin in jurisdictions where it is legal
+    - Provide examples of countries with favorable Bitcoin regulations
+    - How do governments in Bitcoin-friendly countries oversee its usage?
+    - Which nations have embraced Bitcoin and created supportive regulatory frameworks?
+    - Discuss the legal protections and guidelines for Bitcoin users in specific countries
+    - List the countries where Bitcoin has gained legal recognition and acceptance
+    - Explain how Bitcoin is treated under the law in jurisdictions where it is deemed legal
+
+- intent: us_bitcoin_regulation
+  examples: |
+    - How does the United States regulate Bitcoin?
+    - Can you explain the legal framework for Bitcoin in the United States?
+    - Tell me about Bitcoin regulations enforced by the U.S. government
+    - Explain how Bitcoin is taxed and monitored in the United States
+    - Discuss the regulatory agencies overseeing Bitcoin activities in the U.S.
+    - Provide an overview of the compliance requirements for Bitcoin businesses in the United States
+    - What are the reporting obligations for Bitcoin transactions in the United States?
+    - Explain how the U.S. treats Bitcoin under anti-money laundering laws
+    - How does the IRS classify and tax Bitcoin transactions in the United States?
+    - Discuss the legal implications of dealing with Bitcoin in the United States
+
+- intent: eu_bitcoin_stance
+  examples: |
+    - What is the European Union's stance on Bitcoin?
+    - Can you explain how the European Union regulates Bitcoin?
+    - Tell me about the EU's approach to Bitcoin and digital currencies
+    - Discuss the proposed regulations for Bitcoin within the European Union
+    - Provide information on the legal status of Bitcoin in EU member states
+    - Explain how Bitcoin is treated under the Markets in Cryptoassets (MiCA) Regulation
+    - How does the European Union protect consumers and investors in the Bitcoin market?
+    - Describe the regulatory measures aimed at fostering Bitcoin adoption in the EU
+    - Discuss the impact of EU regulations on Bitcoin businesses and users
+    - What are the compliance requirements for Bitcoin firms operating in the European Union?
+
+- intent: canada_bitcoin_regulation
+  examples: |
+    - How does Canada regulate Bitcoin?
+    - Can you explain the legal framework for Bitcoin in Canada?
+    - Tell me about Bitcoin regulations enforced by the Canadian government
+    - Explain how Bitcoin is taxed and monitored in Canada
+    - Discuss the regulatory agencies overseeing Bitcoin activities in Canada
+    - Provide an overview of the compliance requirements for Bitcoin businesses in Canada
+    - What are the reporting obligations for Bitcoin transactions in Canada?
+    - Explain how Canada treats Bitcoin under anti-money laundering laws
+    - How does the CRA classify and tax Bitcoin transactions in Canada?
+    - Discuss the legal implications of dealing with Bitcoin in Canada
+
+- intent: australia_bitcoin_approach
+  examples: |
+    - What is Australia's approach to Bitcoin regulation?
+    - Can you explain how Australia regulates Bitcoin?
+    - Tell me about Australia's laws and policies regarding Bitcoin
+    - Discuss the taxation and legal status of Bitcoin in Australia
+    - Provide information on the regulatory agencies overseeing Bitcoin in Australia
+    - Explain how Australia addresses anti-money laundering concerns related to Bitcoin
+    - How does the ATO classify and tax Bitcoin transactions in Australia?
+    - Describe the compliance requirements for Bitcoin businesses operating in Australia
+    - What are the reporting obligations for Bitcoin transactions in Australia?
+    - Discuss Australia's efforts to promote innovation and investment in the Bitcoin sector
+
+- intent: france_bitcoin_regulation
+  examples: |
+    - How does France regulate Bitcoin and other digital assets?
+    - Can you explain the legal framework for Bitcoin in France?
+    - Tell me about France's approach to regulating cryptocurrencies
+    - Discuss the laws and policies governing Bitcoin in France
+    - Provide information on the regulatory authorities overseeing Bitcoin activities in France
+    - Explain how France addresses anti-money laundering concerns related to Bitcoin
+    - How does France classify and tax Bitcoin transactions?
+    - Describe the compliance requirements for Bitcoin businesses operating in France
+    - What are the reporting obligations for Bitcoin transactions in France?
+    - Discuss France's efforts to balance innovation with consumer protection in the Bitcoin market
+
+- intent: banned_countries
+  examples: |
+    - Which countries have banned Bitcoin?
+    - Can you provide a list of countries where Bitcoin is prohibited?
+    - Tell me about nations that have outlawed Bitcoin and other cryptocurrencies
+    - Discuss countries with restrictive policies towards Bitcoin usage
+    - Provide information on jurisdictions where Bitcoin transactions are banned
+    - How many countries have imposed a ban on Bitcoin?
+    - Which governments have declared Bitcoin illegal?
+    - What are the reasons behind the banning of Bitcoin in certain countries?
+    - Explain the rationale for prohibiting Bitcoin in specific jurisdictions
+    - Discuss the impact of Bitcoin bans on cryptocurrency markets and adoption
+
+- intent: reasons_for_banning_bitcoin
+  examples: |
+    - Why do some countries ban Bitcoin?
+    - What are the motivations behind banning Bitcoin in certain countries?
+    - Can you explain the reasons for outlawing Bitcoin in specific jurisdictions?
+    - Discuss the factors influencing governments to prohibit Bitcoin usage
+    - Provide insight into the concerns driving Bitcoin bans in certain nations
+    - How do policymakers justify the prohibition of Bitcoin transactions?
+    - What risks do governments associate with allowing Bitcoin transactions?
+    - Explain the perceived threats posed by Bitcoin to national economies
+    - Discuss the challenges policymakers face in regulating Bitcoin effectively
+    - What are the geopolitical implications of banning Bitcoin?
+
+- intent: us_potential_bitcoin_illegalization
+  examples: |
+    - Can the United States make Bitcoin illegal?
+    - Is there a possibility of the U.S. banning Bitcoin?
+    - What are the chances of Bitcoin being declared illegal in the United States?
+    - Could legislative action in the United States outlaw Bitcoin?
+    - Discuss the feasibility of the U.S. government criminalizing Bitcoin
+    - How likely is it for Bitcoin to face prohibition in the United States?
+    - What would be the implications of the United States banning Bitcoin?
+    - Can the U.S. effectively enforce a ban on Bitcoin?
+    - What legal barriers would the U.S. encounter in attempting to ban Bitcoin?
+    - Is there public support for making Bitcoin illegal in the United States?
+
+- intent: legal_consequences_of_illegal_cryptocurrency_use
+  examples: |
+    - What are the potential legal consequences of using cryptocurrency for illegal activities?
+    - Can you explain the legal risks associated with using cryptocurrency unlawfully?
+    - Discuss the penalties for engaging in illegal activities with cryptocurrency
+    - Tell me about the legal liabilities of using cryptocurrency for criminal purposes
+    - Provide information on the prosecution and punishment of cryptocurrency-related crimes
+    - How do law enforcement agencies address illicit cryptocurrency transactions?
+    - What laws govern the use of cryptocurrency in illegal activities?
+    - Explain the judicial process for prosecuting individuals involved in cryptocurrency crimes
+    - Discuss the international cooperation efforts to combat cryptocurrency-related offenses
+    - What are the challenges of enforcing laws against illegal cryptocurrency use?
+
+- intent: spread_of_technologies
+  examples: |
+    - What factors contribute to the spread of new technologies globally?
+    - How do new technologies spread across the globe?
+    - What influences the global spread of new technologies?
+    - Can you explain how technologies spread worldwide?
+    - What are the reasons behind the global adoption of new technologies?
+
+- intent: cryptocurrency_adoption
+  examples: |
+    - How does cryptocurrency adoption differ from the spread of other technologies?
+    - What makes cryptocurrency adoption unique compared to other technological advancements?
+    - Can you explain the difference between cryptocurrency adoption and traditional technology adoption?
+    - Why is cryptocurrency adoption not influenced by geography?
+    - In what ways does cryptocurrency adoption vary from conventional technology adoption?
+
+- intent: metrics_of_crypto_adoption
+  examples: |
+    - What metrics does Chainalysis use to track cryptocurrency adoption in different countries?
+    - Can you list the metrics employed by Chainalysis to monitor crypto adoption globally?
+    - How does Chainalysis measure cryptocurrency adoption across nations?
+    - What are the tracking methods employed by Chainalysis to analyze cryptocurrency adoption?
+    - Which parameters does Chainalysis consider when assessing cryptocurrency adoption in various countries?
+
+- intent: weigh_findings_with_PPP
+  examples: |
+    - Why does Chainalysis weigh its findings using the "purchasing power parity" (PPP) standard?
+    - What is the significance of Chainalysis using the "purchasing power parity" (PPP) standard in its analysis?
+    - How does the "purchasing power parity" (PPP) standard influence Chainalysis' conclusions?
+    - Can you explain the rationale behind Chainalysis' use of the "purchasing power parity" (PPP) standard?
+    - What motivated Chainalysis to incorporate the "purchasing power parity" (PPP) standard into its findings?
+
+- intent: crypto_interest_in_Vietnam
+  examples: |
+    - What factors contribute to Vietnam's interest in cryptocurrency?
+    - Why is there a growing interest in cryptocurrency in Vietnam?
+    - Can you explain why cryptocurrency is gaining popularity in Vietnam?
+    - What are the reasons behind the increased cryptocurrency interest in Vietnam?
+    - How has Vietnam's interest in cryptocurrency evolved over time?
+
+- intent: surge_in_demand_Philippines
+  examples: |
+    - Why has the Philippines seen a surge in demand for cryptocurrency?
+    - What factors have led to the increased demand for cryptocurrency in the Philippines?
+    - Can you explain the reasons behind the surge in cryptocurrency demand in the Philippines?
+    - What influenced the sudden rise in cryptocurrency demand in the Philippines?
+    - How has the cryptocurrency market in the Philippines changed recently?
+
+- intent: bitcoin_mining_energy_consumption
+  examples: |
+    - How much energy does Bitcoin mining consume, and what environmental impact does it have?
+    - What is the environmental impact of Bitcoin mining?
+    - Can you tell me about the energy consumption of Bitcoin mining?
+    - How does Bitcoin mining affect the environment?
+    - What are the environmental consequences of Bitcoin mining?
+
+- intent: ledger_journal_establishment
+  examples: |
+    - When was Ledger, a peer-reviewed academic journal focusing on cryptocurrencies, established, and what unique feature does it have?
+    - Tell me about the establishment of Ledger, a cryptocurrency journal, and its unique feature.
+    - What is special about the establishment of Ledger, the cryptocurrency journal?
+    - When did Ledger start, and what distinguishes it from other journals?
+    - What is the unique aspect of Ledger's establishment?
+
+- intent: cryptocurrency_concerns
+  examples: |
+    - What concerns have been raised by Nobel Prize winners and business executives about cryptocurrencies, and what analogy was made regarding Bitcoin?
+    - Can you explain the concerns raised by Nobel Prize winners and business executives regarding cryptocurrencies?
+    - What do Nobel Prize winners and business executives say about cryptocurrencies, and what analogy was made about Bitcoin?
+    - Tell me about the concerns expressed by Nobel Prize winners and business executives regarding cryptocurrencies.
+    - What analogy did Bill Gates make regarding Bitcoin, and what concerns were raised about cryptocurrencies?
+
+- intent: cryptocurrency_regulation_brazil
+  examples: |
+    - What is the current status of cryptocurrency regulation in Brazil?
+    - Can you tell me about cryptocurrency regulation in Brazil?
+    - How are cryptocurrencies regulated in Brazil?
+    - Are there any specific regulations for cryptocurrencies in Brazil?
+    - What is the regulatory framework for cryptocurrencies in Brazil?
+
+- intent: brazil_tax_law_crypto
+  examples: |
+    - How does Brazilian tax law treat cryptocurrencies, and what guidance is provided by tax authorities?
+    - Can you explain how Brazilian tax law applies to cryptocurrencies?
+    - What are the tax implications of cryptocurrencies according to Brazilian law?
+    - How are cryptocurrencies taxed in Brazil?
+    - What guidance do tax authorities provide regarding cryptocurrencies in Brazil?
+
+- intent: china_blockchain_regulation
+  examples: |
+    - What was the stance of the President of China regarding blockchain technology in [year]?
+    - Can you tell me what the President of China said about blockchain technology in [year]?
+    - What is China's position on blockchain technology, according to its President?
+    - Tell me about China's approach to blockchain technology, as stated by its President in [year].
+    - How does China view blockchain technology, according to its President?
+
+- intent: canadian_crypto_regulation
+  examples: |
+    - What are the requirements for companies dealing in virtual currencies in Canada?
+    - Can you explain the regulatory requirements for virtual currency companies in Canada?
+    - How are virtual currency companies regulated in Canada?
+    - What regulations govern companies dealing in virtual currencies in Canada?
+    - Are there any specific requirements for virtual currency companies in Canada?
+
+- intent: eu_regulation_crypto
+  examples: |
+    - What significant legislative action did the EU Parliament take in April [year] regarding cryptocurrencies?
+    - Can you tell me about the legislative action taken by the EU Parliament regarding cryptocurrencies in April [year]?
+    - How did the EU Parliament regulate cryptocurrencies in April [year]?
+    - Tell me about the regulatory measures introduced by the EU Parliament regarding cryptocurrencies in April [year].
+    - What actions were taken by the EU Parliament regarding cryptocurrencies in April [year]?
+
+- intent: india_crypto_regulation
+  examples: |
+    - What is the opinion of Hemant Batra, a leading public policy lawyer, regarding cryptocurrency regulation in India?
+    - Can you tell me Hemant Batra's opinion on cryptocurrency regulation in India?
+    - How does Hemant Batra view cryptocurrency regulation in India?
+    - Tell me about Hemant Batra's stance on cryptocurrency regulation in India.
+    - What does Hemant Batra suggest regarding cryptocurrency regulation in India?
+
+- intent: nigeria_crypto_regulation
+  examples: |
+    - Is cryptocurrency legal in Nigeria?
+    - Can I legally use cryptocurrency in Nigeria?
+    - What is the legal status of cryptocurrency in Nigeria?
+    - Are there any laws regulating cryptocurrency in Nigeria?
+    - Can I trade cryptocurrencies legally in Nigeria?
+
+- intent: us_crypto_regulation
+  examples: |
+    - How did the US Treasury classify Bitcoin?
+    - Can you tell me how the US Treasury categorized Bitcoin?
+    - What classification did the US Treasury assign to Bitcoin?
+    - Tell me how Bitcoin is classified according to the US Treasury.
+    - What is the classification of Bitcoin by the US Treasury?
+
+
+
+
+
+
